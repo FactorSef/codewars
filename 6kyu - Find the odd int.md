@@ -15,7 +15,7 @@ function findOdd(A) {
     prev[cur] = ++prev[cur] || 1;
     return prev;
   }, {})
-  
+
   return +Object.keys(counts).find(key => counts[key] % 2)
 }
 ```
