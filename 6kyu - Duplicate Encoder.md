@@ -21,8 +21,8 @@ Assertion messages may be unclear about what they display in some languages. If 
 
 ```JavaScript
 function duplicateEncode(word) {
-    return word.toLowerCase().split('').map(function (_char, i, arr) {
-      return (arr.filter((item) => item === _char).length - 1) ? ')' : '(';
-    }).join('');
+  return word.toLowerCase().split('').map(function (_char, i, arr) {
+    return (arr.filter((item) => item === _char).length - 1) ? ')' : '(';
+  }).join('');
 }
 ```
